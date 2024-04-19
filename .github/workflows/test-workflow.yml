@@ -1,0 +1,17 @@
+name: FPP Test Odroid
+
+on:
+  push:
+    branches: [ "test/ci"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: odroid
+
+    steps:
+    - name: HelloWorld
+      run: echo "HelloWorld!"
